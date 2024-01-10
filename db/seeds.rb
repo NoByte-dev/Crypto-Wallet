@@ -1,9 +1,33 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+puts 'Iniciou'
+coins_list = [
+  {
+    description: 'Bitcoin',
+    acronym: 'BTC',
+    url_image: "https://i.imgur.com/6SlORnD.png"
+  },
+  {
+    description: 'Ethereum',
+    acronym: 'ETH',
+    url_image: "https://i.imgur.com/5qsogpk.png",
+  },
+  {
+    description: 'Desh',
+    acronym: 'DASH',
+    url_image: "https://i.imgur.com/xDGmwaU.png",
+  },
+]
+
+coins_list.each do |coin|
+  coin = Coin.find_by(coin)
+  if coin.nil?
+    coin = Coin.create(coin)
+    puts "#{coin[:description]} Cadastrado"
+  end
+end
+
+coins_list.each do |coin|
+  coin = Coin.find_or_create_by(coin)
+  puts "#{coin[:description]} Cadastrado"
+end
+
+puts 'Terminou'
