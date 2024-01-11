@@ -4,7 +4,6 @@
 
 <div>
   <%= link_to "Edit this coin", edit_coin_path(@coin) %> |
-  <%= link_to "Back to coins", coins_path %>
-
-  <%= button_to "Destroy this coin", @coin, method: :delete %>
+  <%= link_to "Back to coins", coins_path %> |
+  <%= link_to "Destroy this coin", coin_path, data: {'turbo-method': :delete, 'turbo-confirm': 'Tem certeza?'} %>
 </div>
