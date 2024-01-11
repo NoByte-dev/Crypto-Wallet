@@ -1,4 +1,12 @@
+<button>
+  <%= link_to 'pt_BR', root_path(locale: 'pt-BR') %>
+</button>
+<button>
+  <%= link_to 'en_US', root_path(locale: 'en-US') %>
+</button>
+<hr>
 <h1>Seja bem vindo <%= @nome %></h1><p><strong>Data:</strong> <%= l(Date.today) %></p>
+<h3><%= cookies[:params] %></h3>
 <p>Idioma atual da aplicação é: <%= locale_is %></p>
 <button><%= link_to 'Cadastro de moedas', coins_path %></button>
 <button><%= link_to 'Cadastro de tipos', mining_types_path %></button>
