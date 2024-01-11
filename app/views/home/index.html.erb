@@ -1,4 +1,4 @@
-<h1>Seja bem vindo <%= @nome %></h1><p><strong>Data:</strong> <%= data_br %></p>
+<h1>Seja bem vindo <%= @nome %></h1><p><strong>Data:</strong> <%= l(Date.today) %></p>
+<p>Idioma atual da aplicação é: <%= locale_is %></p>
 <button><%= link_to 'Cadastro de moedas', coins_path %></button>
 <button><%= link_to 'Cadastro de tipos', mining_types_path %></button>
-

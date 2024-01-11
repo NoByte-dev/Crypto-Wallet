@@ -1,10 +1,5 @@
 module ApplicationHelper
-  def data_br(formato = 'curta')
-    case formato
-    when 'curta'
-      Date.today.strftime('%d-%m-%Y')
-    else 'completa'
-      Date.today.strftime('%d-%m-%Y %H:%M') 
-    end
+  def locale_is
+    I18n.locale.to_s == 'pt-BR' ? 'Português do Brasil' : 'Inglês dos EUA'
   end
 end

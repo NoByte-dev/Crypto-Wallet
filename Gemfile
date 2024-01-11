@@ -28,7 +28,11 @@ gem "jbuilder"
 
 # A terminal spinner for tasks that have non-deterministic time frame [https://github.com/piotrmurach/tty-spinner]
 gem "tty-spinner"
+# Terminal output styling with intuitive and clean API that doesn't monkey patch String class. [https://github.com/piotrmurach/pastel]
 gem 'pastel'
+
+# Centralization of locale data collection for Ruby on Rails. [https://github.com/svenfuchs/rails-i18n]
+gem 'rails-i18n', '~> 7.0.0'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
