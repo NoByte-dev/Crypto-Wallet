@@ -1,22 +1,79 @@
 namespace :dev do
-  desc "Configura ambiente de desenvolvimento"
+  @color = Pastel.new
+  desc 'Configura ambiente de desenvolvimento'
   task setup: :environment do
-    puts %x(clear)
-    pastel = Pastel.new
-    spinners = TTY::Spinner::Multi.new("[:spinner] Configurando ambiente de desenvolvimento!")
-    sp1 = set_spinner(spinners, 'APAGANDO') { %x(rails db:drop) }
-    sp2 = set_spinner(spinners, 'CRIANDO') { %x(rails db:create) }
-    sp3 = set_spinner(spinners, 'CONFIGURANDO') { %x(rails db:migrate) }
-    sp4 = set_spinner(spinners, 'POPULANDO') { %x(rails db:seed) }
-    puts '=== Ambiente configurado ==='
+    puts "#{@color.yellow('Configurando ambiente de desenvolvimento!')}"
+    show_spinner('Apagando banco de dados!') { %x(rails db:drop) }
+    show_spinner('Criando banco de dados!') { %x(rails db:create) }
+    show_spinner('Configurando banco de dados!') { %x(rails db:migrate) }
+    show_spinner('Populando banco de dados com Moedas!') { %x(rails dev:seed_coins) }
+    show_spinner('Populando banco de dados com Tipos de Mineração!') { %x(rails dev:seed_types) }
   end
 
-  def set_spinner(spinners, action)
-    pastel = Pastel.new
-    spinner = spinners.register("[#{pastel.green(':spinner')}] #{action} BANCO")
+  desc 'Popular o banco de dados com moedas'
+  task seed_coins: :environment do
+    coins_list = [
+      {
+        description: 'Bitcoin',
+        acronym: 'BTC',
+        url_image: 'https://i.imgur.com/6SlORnD.png'
+      },
+      {
+        description: 'Ethereum',
+        acronym: 'ETH',
+        url_image: 'https://i.imgur.com/5qsogpk.png'
+      },
+      {
+        description: 'Desh',
+        acronym: 'DASH',
+        url_image: 'https://i.imgur.com/xDGmwaU.png'
+      },
+      {
+        description: 'Iota',
+        acronym: 'IOT',
+        url_image: 'https://i.imgur.com/zgcUEgs.png'
+      },
+      {
+        description: 'Zcash',
+        acronym: 'ZAC',
+        url_image: 'https://i.imgur.com/qapHkKT.png'
+      }
+    ]
+
+    coins_list.each do |coin|
+      coin = Coin.find_or_create_by(coin)
+    end
+  end
+
+  desc 'Popular o banco de dados com tipos de mineração'
+  task seed_types: :environment do
+    miningtypes_list = [
+      {
+        description: 'Proof of Work',
+        acronym: 'PoW'
+      },
+      {
+        description: 'Proof of Stake',
+        acronym: 'PoS'
+      },
+      {
+        description: 'Proof of Capacity',
+        acronym: 'PoC'
+      }
+    ]
+
+    miningtypes_list.each do |mining_type|
+      mining_type = MiningType.find_or_create_by(mining_type)
+    end
+  end
+
+  private
+
+  def show_spinner(action)
+    spinner = TTY::Spinner.new('[:spinner] :title', success_mark: "#{@color.green('✔')}")
+    spinner.update(title: "#{action}")
     spinner.auto_spin
     yield
     spinner.success
-    spinner
   end
 end
