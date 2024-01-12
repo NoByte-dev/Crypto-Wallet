@@ -28,4 +28,22 @@
 #       enabled: "ON"
 
 en-US:
+  wellcome: Be very welcome!
+  cripto_text: Delve into the fascinating realm of cryptocurrencies with this comprehensive table. We showcase appealing logos, captivating names, and distinct mining methods, offering a comprehensive view of the options available in the digital financial landscape.
+  portuguese: Portuguese
+  english: English
   submit: Submit
+  cripto_coin: Crypto Coin
+  description: Description
+  acronym: Acronym
+  url_image: Image url
+  mining_type: Mining type
+  edit_title: Edit Coin
+  show: Show
+  edit: Edit
+  destroy: Delete
+  back: Back
+  new_coin: New Coin
+  home: Home
+  confirmation_msg: Are you sure ?
+  submit: Save

@@ -1,7 +1,10 @@
 ---
 pt-BR:
-  cripto_coin: Cripto Moedas
+  wellcome: Seja muito Bem-vindo!
   cripto_text: Explore o fascinante mundo das criptomoedas nesta tabela detalhada. Apresentamos logos atrativos, nomes cativantes e métodos de mineração distintos, proporcionando uma visão abrangente das opções disponíveis no universo digital financeiro.
+  portuguese: Português
+  english: Inglês
+  cripto_coin: Cripto Moedas
   description: Descrição
   acronym: Sigla
   url_image: Link da imagem
@@ -12,7 +15,7 @@ pt-BR:
   destroy: Apagar
   back: Voltar
   new_coin: Nova moeda
-  home: Página principal
+  home: Início
   confirmation_msg: Tem certeza ?
   submit: Salvar
   activerecord:
