@@ -13,7 +13,7 @@
 
   </head>
 
-  <body>
+  <body class="flex flex-col items-center">
     <%= render partial: 'shared/notifications/success', locals: { message: flash[:notice] } %>
     <%= render partial: 'shared/notifications/errors', locals: { message: flash[:alert] } %>
 
