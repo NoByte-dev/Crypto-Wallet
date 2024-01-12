@@ -1,12 +1,7 @@
-<button>
-  <%= link_to 'pt_BR', root_path(locale: 'pt-BR') %>
-</button>
-<button>
-  <%= link_to 'en_US', root_path(locale: 'en-US') %>
-</button>
-<hr>
-<h1>Seja bem vindo <%= @nome %></h1><p><strong>Data:</strong> <%= l(Date.today) %></p>
-<h3><%= cookies[:params] %></h3>
-<p>Idioma atual da aplicação é: <%= locale_is %></p>
-<button><%= link_to 'Cadastro de moedas', coins_path %></button>
-<button><%= link_to 'Cadastro de tipos', mining_types_path %></button>
+<div class="bg-gray-800 text-white py-4 px-20 w-full min-h-max">
+  <h1 class="text-4xl font-bold my-2"><%= t('wellcome') %></h1>
+  <p class="text-lg my-2"><%= t('cripto_text') %></p>
+  <hr>
+  <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"><%= link_to t('cripto_coin'), coins_path %></button>
+  <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"><%= link_to t('mining_type'), mining_types_path %></button>
+</div>
