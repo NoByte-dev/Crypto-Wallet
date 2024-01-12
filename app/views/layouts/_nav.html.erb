@@ -1,0 +1,10 @@
+<nav class="bg-gray-800 p-4 flex justify-between items-center">
+  <div class="flex items-center space-x-4">
+    <p class="text-white"> <%= link_to t('home'), root_path %></p>
+  </div>
+  <div class="flex items-center space-x-4">
+    <p class="text-white"><%= link_to t('portuguese'), root_path(locale: 'pt-BR') %></p>
+    <p class="text-white"><%= link_to t('english'), root_path(locale: 'en-US') %></p>
+    <p><%= locale_set_flag %></p>
+  </div>
+</nav>

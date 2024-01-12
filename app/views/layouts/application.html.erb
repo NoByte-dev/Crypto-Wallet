@@ -13,7 +13,8 @@
 
   </head>
 
-  <body class="flex flex-col items-center">
+  <body class="w-dvw h-dvh">
+    <%= render partial: 'layouts/nav' %>
     <%= render partial: 'shared/notifications/success', locals: { message: flash[:notice] } %>
     <%= render partial: 'shared/notifications/errors', locals: { message: flash[:alert] } %>
 
