@@ -1,34 +1,22 @@
 <!DOCTYPE html>
-  <style>
-    html {
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-      font-family: ui-sans-serif, system-ui, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 100vw;
-      max-height: 100vh;
-    }
-    table, td, th {
-      border: 1px solid rgba(0, 0, 0, 0.3);
-      border-collapse: collapse;
-      padding: 2px;
-    }
-  </style>
   <head>
+    <title>Crypto Wallet</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Crypto Wallet</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+
   </head>
 
   <body>
+    <%= render partial: 'shared/notifications/success', locals: { message: flash[:notice] } %>
+    <%= render partial: 'shared/notifications/errors', locals: { message: flash[:alert] } %>
+
     <%= yield %>
   </body>
 </html>
