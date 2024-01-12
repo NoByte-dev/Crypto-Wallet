@@ -19,22 +19,22 @@
             </thead>
             <tbody>
               <% @coins.each do |coin| %>
-                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                    <td class="px-6 py-2 font-medium whitespace-nowrap text-white">
                       <%= coin.description %>
                     </td>
-                    <td class="px-6 py-4">
+                    <td class="px-6 py-2">
                       <%= coin.acronym %>
                     </td>
-                    <td class="px-6 py-4">
+                    <td class="px-6 py-2">
                       <%= image_tag coin.url_image, alt: 'Imagem da moeda', size: '25x25', style: 'margin:0px;vertical-align:middle' %>
                     </td>
-                    <td class="px-6 py-4">
+                    <td class="px-6 py-2">
                       <%= coin.mining_type.description %>
                     </td>
-                    <td class="px-6 py-4 flex flex-col items-end">
-                      <%= link_to t('show'), coin, class: "font-medium text-blue-600 dark:text-blue-500 hover:underline" %>
-                      <%= link_to t('edit'), edit_coin_path(coin), class: "font-medium text-blue-600 dark:text-blue-500 hover:underline" %>
+                    <td class="px-6 py-2 flex flex-col items-end">
+                      <%= link_to t('show'), coin, class: "font-medium text-blue-600 hover:underline" %>
+                      <%= link_to t('edit'), edit_coin_path(coin), class: "font-medium text-blue-600 hover:underline" %>
                     </td>
                 </tr>
               <% end %>
