@@ -13,11 +13,11 @@
 
   </head>
 
-  <body class="w-dvw h-dvh">
-    <%= render partial: 'layouts/nav' %>
+  <body class="w-dvw h-dvh flex flex-col">
+    <nav> <%= render partial: 'layouts/nav' %> </nav>
     <%= render partial: 'shared/notifications/success', locals: { message: flash[:notice] } %>
     <%= render partial: 'shared/notifications/errors', locals: { message: flash[:alert] } %>
-
-    <%= yield %>
+    <main class="flex-grow"> <%= yield %> </main>
+    <footer> <%= render partial: 'layouts/footer' %> </footer>
   </body>
 </html>

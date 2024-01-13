@@ -2,14 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* body {
+    background: linear-gradient(230deg,#5a0093 0%,#3b0060 30%,#180026 100%);
+  } */
+  body { @apply 
+    bg-gradient-to-bl
+    from-cw-purple-700
+    via-cw-purple-800
+    to-cw-purple-900
+  }
+}
 
-@layer components {
+@layer utilities {
   button { @apply
     py-1
     px-2
     rounded-md
-    bg-blue-500
-    hover:bg-blue-700
+    bg-cw-purple-800
+    hover:bg-cw-purple-700
     text-white
+    border
+    border-opacity-0
+    border-white
+    hover:border-white
+    hover:border-opacity-40
+    hover:border
+    shadow-black
+    drop-shadow-md
   }
 }
