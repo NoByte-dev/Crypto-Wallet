@@ -1,4 +1,3 @@
----
 pt-BR:
   wellcome: Seja muito Bem-vindo!
   cripto_text: Explore o fascinante mundo das criptomoedas nesta tabela detalhada. Apresentamos logos atrativos, nomes cativantes e métodos de mineração distintos, proporcionando uma visão abrangente das opções disponíveis no universo digital financeiro.
@@ -18,6 +17,7 @@ pt-BR:
   home: Início
   confirmation_msg: Tem certeza ?
   submit: Salvar
+  form_errors: Ups! Alguma coisa deu errado
   activerecord:
     errors:
       messages:
