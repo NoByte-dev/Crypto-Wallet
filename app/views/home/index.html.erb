@@ -1,7 +1,13 @@
-<div class="bg-gray-800 text-white py-4 px-20 w-full min-h-max">
+<div class="text-white py-4 px-10 sm:px-20">
   <h1 class="text-4xl font-bold my-2"><%= t('wellcome') %></h1>
   <p class="text-lg my-2"><%= t('cripto_text') %></p>
   <hr>
-  <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"><%= link_to t('cripto_coin'), coins_path %></button>
-  <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"><%= link_to t('mining_type'), mining_types_path %></button>
+  <div class="py-4">
+    <button><%= link_to t('cripto_coin'), coins_path %></button>
+    <button><%= link_to t('mining_type'), mining_types_path %></button>
+  </div>
+  <div class="flex items-center justify-center flex-col sm:flex-row sm:gap-3 lg:gap-20 xl:gap-32">
+    <img src="https://i.imgur.com/5rOyTIm.png" alt="Crypto Wallet" class="size-4/5 sm:size-4/5 md:size-8/12 lg:size-1/2 xl:size-1/4 rounded-3xl">
+    <img src="https://i.imgur.com/qAc5VtB.png" alt="Crypto Wallet" class="size-0 sm:size-4/5 md:size-8/12 lg:size-1/2 xl:size-1/4 rounded-3xl">
+  </div>
 </div>
