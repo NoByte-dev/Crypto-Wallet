@@ -1,26 +1,27 @@
 <%= render 'shared/notifications/form_errors', object: @coin %>
 <%= form_with(model: coin) do |form| %>
-  <div>
-    <%= form.label :description, t('description'), style: "display: block" %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div>
-    <%= form.label :acronym, t('acronym'), style: "display: block" %>
-    <%= form.text_field :acronym %>
-  </div>
-
-  <div>
-    <%= form.label :url_image, t('url_image'), style: "display: block" %>
-    <%= form.text_field :url_image %>
-  </div>
-
-  <div>
-    <%= form.label :mining_type_id, t('mining_type'), style: 'display: block' %>
-    <%#= form.select('mining_type_id', @all_mining_types, include_blank: 'Selecione...') %>
-  </div>
-
-  <div>
-    <%= form.submit t('submit') %>
+  <div class="flex justify-center">
+    <div class="w-full p-5">
+      <div>
+        <%= form.label :description, class: 'form-label' %>
+        <%= form.text_field :description,  placeholder: 'Nome da moeda', class: 'form-input' %> 
+      </div>
+      <div>
+        <%= form.label :acronym, t('acronym'), class: 'form-label' %>
+        <%= form.text_field :acronym, placeholder: 'Sigla da moeda', class: 'form-input' %>
+      </div>
+      <div>
+        <%= form.label :url_image, t('url_image'), class: 'form-label' %>
+        <%= form.url_field :url_image, placeholder: 'url da imagem', class: 'form-input' %>
+      </div>
+      <div>
+        <%= form.label :mining_type_id, t('mining_type'), class: "form-label-select" %>
+      </div>
+      <div class="flex flex-row items-center justify-between gap-2">
+          <%= form.select :mining_type_id, @all_mining_types, { include_blank: 'Selecione...' }, class: "form-input-select w-full" %>
+          <%= form.submit t('submit'), type: :submit, class: "w-1/4 cursor-pointer bg-blue-500 hover:bg-blue-700 text-white py-1 px-4 rounded cursor-pointer" %>
+          <%= link_to t('back'), coins_path, type: :button, class: "w-1/4 text-center cursor-pointer bg-blue-500 hover:bg-blue-700 text-white py-1 px-4 rounded cursor-pointer" %>
+      </div>
+    </div>
   </div>
 <% end %>
