@@ -1,11 +1,15 @@
 pt-BR:
+  controller_notices:
+    created: Moeda registrada com sucesso!
+    updated: Moeda atualizado com sucesso!
+    deleted: Moeda apagada com sucesso!
   wellcome: Seja muito Bem-vindo!
   cripto_text: Explore o fascinante mundo das criptomoedas nesta tabela detalhada. Apresentamos logos atrativos, nomes cativantes e métodos de mineração distintos, proporcionando uma visão abrangente das opções disponíveis no universo digital financeiro.
   mining_type_text: A mineração em criptomoedas envolve validar transações na rede. A Proof of Work exige resolver problemas complexos, enquanto a Proof of Stake baseia-se na quantidade de criptomoeda mantida. Outras abordagens incluem DPoS e Proof of Space, garantindo segurança e descentralização nas redes blockchain.
   portuguese: Português
   english: Inglês
   cripto_coin: Cripto Moedas
-  description: Descrição
+  description: Nome
   acronym: Sigla
   url_image: Link da imagem
   mining_type: Tipo de mineração
