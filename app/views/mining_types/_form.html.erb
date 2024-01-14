@@ -1,16 +1,19 @@
 <%= render 'shared/notifications/form_errors', object: @mining_type %>
 <%= form_with(model: mining_type) do |form| %>
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div>
-    <%= form.label :acronym, style: "display: block" %>
-    <%= form.text_field :acronym %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+  <div class="flex justify-center">
+    <div class="w-full p-5">
+      <div>
+        <%= form.label :description, class: 'form-label' %>
+        <%= form.text_field :description,  placeholder: 'Nome da moeda', class: 'form-input' %> 
+      </div>
+      <div>
+        <%= form.label :acronym, t('acronym'), class: 'form-label' %>
+        <%= form.text_field :acronym, placeholder: 'Sigla da moeda', class: 'form-input' %>
+      </div>
+      <div class="flex flex-row items-center justify-between gap-2">
+          <%= form.submit t('submit'), type: :submit, class: "w-1/2 cursor-pointer bg-blue-500 hover:bg-blue-700 text-white py-1 px-4 rounded cursor-pointer" %>
+          <%= link_to t('back'), mining_types_path, type: :button, class: "w-1/2 text-center cursor-pointer bg-blue-500 hover:bg-blue-700 text-white py-1 px-4 rounded cursor-pointer" %>
+      </div>
+    </div>
   </div>
 <% end %>
