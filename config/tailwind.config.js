@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'clouds-pattern': "url('circuit-pattern.svg')"
+      },
       colors: {
         'cw-purple': {
           100: '#f4e2ff',

@@ -6,7 +6,10 @@
   /* body {
     background: linear-gradient(230deg,#5a0093 0%,#3b0060 30%,#180026 100%);
   } */
-  body { @apply 
+  body { @apply
+    bg-circuit-pattern
+  }
+  html { @apply
     bg-gradient-to-bl
     from-cw-purple-700
     via-cw-purple-800
