@@ -14,6 +14,9 @@
     to-cw-purple-900
     bg-fixed
   }
+  input:focus { @apply
+    outline-none
+  }
 }
 
 @layer utilities {
@@ -46,6 +49,7 @@
     text-sm
     font-medium
     text-white
+    w-full
   }
   .form-input { @apply
     border
@@ -58,8 +62,7 @@
     border-gray-600 
     placeholder-gray-400 
     text-white
-    focus:ring-blue-500 
-    focus:border-blue-500
+    focus:border-cw-purple-500
   }
   .form-label-select { @apply
     block
