@@ -4,39 +4,39 @@
 ><details>
 >  <summary>[Página Principal]</summary>
 >
->  ![Imagem da home](https://i.imgur.com/fJ8kLsP.png)
+>  ![Imagem da home](https://i.imgur.com/lQy4eYb.png)
 ></details>
 
 > ### Tabelas
 ><details>
 >  <summary>[Coins]</summary>
 >
->  ![Imagem da home](https://i.imgur.com/DAvSr9I.png)
+>  ![Coins Index](https://i.imgur.com/ZNkdPqX.png)
 ></details>
 ><details>
 >  <summary>[Tipos de Mineração]</summary>
 >
->  ![Imagem da home](https://i.imgur.com/kYuS7z2.png)
+>  ![Mining Types Index](https://i.imgur.com/LF2rQb8.png)
 ></details>
 
 > ### Formulários
 ><details>
 >  <summary>[Nova Moeda]</summary>
 >
->  ![Imagem da home](https://i.imgur.com/sqVDKfi.png)
+>  ![Coin New](https://i.imgur.com/o2NFrxh.png)
 ></details>
 ><details>
 >  <summary>[Exibir Moeda]</summary>
 >
->  ![Imagem da home](https://i.imgur.com/VOi9UNu.png)
+>  ![Coin Show](https://i.imgur.com/u4DfiCj.png)
 ></details>
 ><details>
 >  <summary>[Novo Tipo]</summary>
 >
->  ![Imagem da home](https://i.imgur.com/eorPB60.png)
+>  ![Type new](https://i.imgur.com/S8J9IgO.png)
 ></details>
 ><details>
 >  <summary>[Exibir Tipo]</summary>
 >
->  ![Imagem da home](https://i.imgur.com/izohUXQ.png)
+>  ![Type Show](https://i.imgur.com/LZF8u3P.png)
 ></details>
