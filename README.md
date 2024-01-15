@@ -41,11 +41,12 @@ Por fim o projeto pode ser iniciado usando:
 
 ## TODO
 
-- [ ] Responsividade as views de News, Edit e Show;
+- [x] Responsividade as views de News, Edit e Show;
 - [ ] Estilizar botões da página principal que levam para index de Moedas e Tipos de moedas;
 - [ ] Organização arquivo de configuração I18n;
 - [ ] Tradução de models via I18n;
 - [ ] Implementar gem **Devise**
 - [ ] **Active Store** para lidar com imagens;
 - [x] Implementar logo tipo na navbar;
-- [ ] Implementar listagem nas tabelas;
+- [ ] Implementar paginação nas tabelas;
+- [ ] Implementar [Breadcrumbs](https://i.imgur.com/lFfYWpg.png) de navegação;
