@@ -1,66 +1,64 @@
-<div class="w-full flex mt-4 sm:px-4 justify-center">
-  <div class="w-full sm:w-4/5 md:w-2/3">
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <table class="w-full text-sm text-left rtl:text-right text-gray-400">
-              <caption class="text-gray-900/80 bg-pattern-tpgraphy bg-current p-5 text-left">
-                <div class="flex flex-row justify-between items-center">
-                  <p class="text-white text-lg font-semibold"><%= t('cripto_coin') %></p>
-                    <%= link_to t('new_coin'), new_coin_path, class: "bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" %>
-                </div>
-                <p class="mt-1 text-sm font-normal text-gray-400"> <%= t('cripto_text') %></p>
-              </caption>
-            <thead class="text-xs uppercase bg-gray-700 text-gray-400">
-                <tr>
-                    <th scope="row" class="px-6 py-3">Moeda</th>
-                    <th scope="row" class="px-6 py-3">Sigla</th>
-                    <th scope="row" class="px-6 py-3">Ícone</th>
-                    <th scope="row" class="px-6 py-3">Tipo de Mineração</th>
-                    <th scope="row" class="px-6 py-3" rowspan="2"></th>
-                </tr>
-            </thead>
-            <tbody>
-              <% @coins.each do |coin| %>
-                <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
-                    <td class="px-6 py-2 font-medium whitespace-nowrap text-white">
-                      <%= coin.description %>
-                    </td>
-                    <td class="px-6 py-2">
-                      <%= coin.acronym %>
-                    </td>
-                    <td class="px-6 py-2">
-                      <%= image_tag coin.url_image, size: '25x25', style: 'margin:0px;vertical-align:middle' %>
-                    </td>
-                    <td class="px-6 py-2">
-                      <%= coin.mining_type.description %>
-                    </td>
-                    <td class="px-6 py-2 flex justify-end space-x-2">
-                      <%= link_to coin do %>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="w-7 h-7 hover:text-cw-purple-500 ease-out duration-500">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75H6A2.25 2.25 0 0 0 3.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0 1 20.25 6v1.5m0 9V18A2.25 2.25 0 0 1 18 20.25h-1.5m-9 0H6A2.25 2.25 0 0 1 3.75 18v-1.5M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                        </svg>
-                      <% end %>
-                      <%= link_to edit_coin_path(coin) do %>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="w-7 h-7 hover:text-cw-purple-500 ease-out duration-500">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
-                        </svg>
-                      <% end %>
-                    </td>
-                </tr>
-              <% end %>
-            </tbody>
-        </table>
-    </div>
+<div class="w-full flex justify-center pt-6">
+  <div class="w-full sm:w-[75%] md:w-[75%] lg:w-[50%] xl:w-[40%] overflow-x-auto shadow-md rounded-lg">
+      <table class="w-full text-sm text-left rtl:text-right text-gray-400">
+            <caption class="text-gray-900/80 bg-pattern-tpgraphy bg-current p-5 text-left">
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-lg font-semibold"><%= t('cripto_coin') %></p>
+                  <%= link_to t('new_coin'), new_coin_path, class: "bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" %>
+              </div>
+              <p class="mt-1 text-sm font-normal text-gray-400"> <%= t('cripto_text') %></p>
+            </caption>
+          <thead class="text-xs uppercase bg-gray-700 text-gray-400">
+              <tr>
+                  <th scope="row" class="px-2 py-2">Moeda</th>
+                  <th scope="row" class="px-2 py-2">Sigla</th>
+                  <th scope="row" class="px-6 py-2 text-center">Ícone</th>
+                  <th scope="row" class="px-2 py-2">Tipo de Mineração</th>
+                  <th scope="row" class="px-2 py-2" rowspan="2"></th>
+              </tr>
+          </thead>
+          <tbody>
+            <% @coins.each do |coin| %>
+              <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                  <td class="px-2 py-2 font-medium whitespace-nowrap text-white">
+                    <%= coin.description %>
+                  </td>
+                  <td class="px-2 py-2">
+                    <%= coin.acronym %>
+                  </td>
+                  <td class="px-6 py-2 flex justify-center">
+                    <%= image_tag coin.url_image, size: '25x25', style: 'margin:0px;vertical-align:middle' %>
+                  </td>
+                  <td class="px-2 py-2">
+                    <%= coin.mining_type.description %>
+                  </td>
+                  <td class="px-2 py-2 flex justify-end space-x-2">
+                    <%= link_to coin do %>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-7 h-7 hover:text-cw-purple-500 ease-out duration-500">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75H6A2.25 2.25 0 0 0 3.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0 1 20.25 6v1.5m0 9V18A2.25 2.25 0 0 1 18 20.25h-1.5m-9 0H6A2.25 2.25 0 0 1 3.75 18v-1.5M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      </svg>
+                    <% end %>
+                    <%= link_to edit_coin_path(coin) do %>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-7 h-7 hover:text-cw-purple-500 ease-out duration-500">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                      </svg>
+                    <% end %>
+                  </td>
+              </tr>
+            <% end %>
+          </tbody>
+      </table>
   </div>
 </div>
