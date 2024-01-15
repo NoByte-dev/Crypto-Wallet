@@ -2,12 +2,12 @@
   <h1 class="text-4xl font-bold my-2"><%= t('wellcome') %></h1>
   <p class="text-lg my-2"><%= t('cripto_text') %></p>
   <hr>
-  <div class="py-4">
-    <button><%= link_to t('cripto_coin'), coins_path %></button>
-    <button><%= link_to t('mining_type'), mining_types_path %></button>
+  <div class="py-4 flex flex-col sm:flex-row w-full sm:w-100">
+    <%= link_to t('cripto_coin'), coins_path, class: "btn-links" %>
+    <%= link_to t('mining_type'), mining_types_path, class: "btn-links" %>
   </div>
-  <div class="flex items-center justify-center flex-col sm:flex-row sm:gap-3 lg:gap-20 xl:gap-32">
-    <img src="https://i.imgur.com/5rOyTIm.png" alt="Crypto Wallet" class="size-4/5 sm:size-4/5 md:size-8/12 lg:size-1/2 xl:size-1/4 rounded-3xl">
-    <img src="https://i.imgur.com/qAc5VtB.png" alt="Crypto Wallet" class="size-0 sm:size-4/5 md:size-8/12 lg:size-1/2 xl:size-1/4 rounded-3xl">
+  <div class="flex justify-center flex-col gap-6 sm:flex-row">
+    <img src="https://i.imgur.com/5rOyTIm.png" alt="Crypto Wallet" class="w-full lg:w-full xl:w-[30%] rounded-3xl">
+    <img src="https://i.imgur.com/qAc5VtB.png" alt="Crypto Wallet" class="w-full lg:w-full xl:w-[30%] rounded-3xl">
   </div>
 </div>

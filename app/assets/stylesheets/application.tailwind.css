@@ -3,36 +3,39 @@
 @tailwind utilities;
 
 @layer base {
-  /* body {
-    background: linear-gradient(230deg,#5a0093 0%,#3b0060 30%,#180026 100%);
-  } */
-  body { @apply
+  .overlay-pattern { @apply
     bg-pattern-circuit
+    bg-fixed
   }
-  html { @apply
+  body { @apply
     bg-gradient-to-bl
     from-cw-purple-700
     via-cw-purple-800
     to-cw-purple-900
+    bg-fixed
   }
 }
 
 @layer utilities {
   .btn-links { @apply
-    py-1
-    px-2
-    rounded-md
-    bg-cw-purple-800
-    hover:bg-cw-purple-700
     text-white
-    border
-    border-opacity-0
-    border-white
-    hover:border-white
-    hover:border-opacity-40
-    hover:border
-    shadow-black
-    drop-shadow-md
+    bg-gradient-to-r
+    from-cw-purple-500
+    via-cw-purple-600
+    to-cw-purple-700
+    hover:bg-gradient-to-br
+    focus:ring-4 focus:outline-none
+    focus:ring-purple-800
+    shadow-lg
+    shadow-purple-800/80
+    font-bold
+    rounded-lg
+    text-lg
+    px-5
+    py-2.5
+    text-center
+    me-2
+    mb-2
   }
 }
 
