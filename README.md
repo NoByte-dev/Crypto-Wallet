@@ -41,7 +41,5 @@ Por fim o projeto pode ser iniciado usando:
 
 ## TODO
 
-- [ ] Implementar **Devise**
 - [ ] **Active Store** para lidar com imagens;
-- [ ] Implementar paginação nas tabelas;
 - [ ] Implementar [Breadcrumbs](https://i.imgur.com/lFfYWpg.png) de navegação;
