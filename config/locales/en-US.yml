@@ -1,26 +1,3 @@
 en-US:
-  controller_notices:
-    created: Coin was successfully created!
-    updated: Coin was successfully updated!
-    deleted: Coin was successfully destroyed!
-  wellcome: Be very welcome!
-  cripto_text: Delve into the fascinating realm of cryptocurrencies with this comprehensive table. We showcase appealing logos, captivating names, and distinct mining methods, offering a comprehensive view of the options available in the digital financial landscape.
-  mining_type_text: Mining in cryptocurrencies involves validating transactions on the network. Proof of Work requires solving complex problems, while Proof of Stake is based on the amount of cryptocurrency held. Other approaches include DPoS and Proof of Space, ensuring security and decentralization in blockchain networks.
-  portuguese: Portuguese
-  english: English
-  cripto_coin: Crypto Coin
-  description: Description
-  acronym: Acronym
-  url_image: Image url
-  mining_type: Mining type
-  edit_title: Edit Coin
-  show: Show
-  edit: Edit
-  destroy: Delete
-  back: Back
-  new_coin: New Coin
-  new_mining_type: New type
-  home: Home
-  confirmation_msg: Are you sure ?
-  submit: Save
   form_errors: Ups! Something went wrong
+  confirmation_msg: 'Are you sure?'

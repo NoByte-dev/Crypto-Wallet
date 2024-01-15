@@ -1,0 +1,12 @@
+en-US:
+  home:
+    index:
+      crypto_coin: Crypto Coin
+      crypto_text: Explore the fascinating world of cryptocurrencies in this detailed table. We present attractive logos, captivating names, and distinct mining methods, providing a comprehensive overview of the options available in the digital financial universe.
+      wellcome: Welcome!
+      cripto_coins: Crypto Coins
+      mining_types: Mining Types
+  layouts:
+    nav:
+      portuguese: Portuguese
+      english: English

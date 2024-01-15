@@ -1,0 +1,31 @@
+en-US:
+  mining_types:
+    index:
+      mining_types: Mining Types
+      types_text: Cryptocurrency mining involves validating transactions on the network. Proof of Work requires solving complex problems, while Proof of Stake is based on the amount of cryptocurrency held. Other approaches include DPoS and Proof of Space, ensuring security and decentralization in blockchain networks.
+      acronym: Acronym
+      mining_type: Mining Type
+      show_edit: Show/Edit
+      new_mining_type: New Type
+    new:
+      new_mining_type: New Type
+    form:
+      placeholders:
+        description: Enter a mining type...
+        acronym: Enter an acronym...
+      labels:
+        description: Name
+        acronym: Acronym
+      submit: Save
+      back: Back
+    show:
+      back: Back
+      destroy: Delete
+    edit:
+      edit_type: Editing mining type
+    create:
+      success: Mining type successfully registered!
+    update:
+      success: Mining type successfully updated!
+    destroy:
+      success: Mining type successfully deleted!

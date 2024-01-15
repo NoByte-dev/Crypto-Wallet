@@ -1,0 +1,36 @@
+en-US:
+  coins:
+    index:
+      crypto_coins: Crypto Coins
+      crypto_text: Explore the fascinating world of cryptocurrencies in this detailed table. We present attractive logos, captivating names, and distinct mining methods, providing a comprehensive overview of the options available in the digital financial universe.
+      acronym: Acronym
+      coin: Coin
+      icon: Icon
+      mining_type: Mining Type
+      show_edit: Show/Edit
+      new_coin: New Coin
+    new:
+      new_coin: New Coin
+    form:
+      placeholders:
+        description: Enter the coin name...
+        acronym: Enter the acronym...
+        url_image: Image URL...
+      labels:
+        description: Name
+        acronym: Acronym
+        url_image: URL
+        mining_type: Mining Type
+      submit: Save
+      back: Back
+    show:
+      back: Back
+      destroy: Delete
+    edit:
+      edit_coin: Editing Coin
+    create:
+      success: Coin successfully registered!
+    update:
+      success: Coin successfully updated!
+    destroy:
+      success: Coin successfully deleted!
