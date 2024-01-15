@@ -17,7 +17,7 @@ class MiningTypesController < ApplicationController
     @mining_type = MiningType.new(mining_type_params)
 
     if @mining_type.save
-      redirect_to mining_types_path, notice: 'Criado'
+      redirect_to mining_types_path, notice: t('.success')
     else
       render( :new, status: :unprocessable_entity )
     end
@@ -25,7 +25,7 @@ class MiningTypesController < ApplicationController
 
   def update
     if @mining_type.update(mining_type_params)
-      redirect_to mining_types_path, notice: 'Atualizou'
+      redirect_to mining_types_path, notice: t('.success')
     else
       render( :edit, status: :unprocessable_entity )
     end
@@ -33,7 +33,7 @@ class MiningTypesController < ApplicationController
 
   def destroy
     @mining_type.destroy!
-    redirect_to mining_types_url, notice: "Apagou"
+    redirect_to mining_types_url, notice: t('.success')
   end
 
   private

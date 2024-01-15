@@ -1,0 +1,31 @@
+pt-BR:
+    mining_types:
+      index:
+        mining_types: Tipos de Mineração
+        types_text: A mineração em criptomoedas envolve validar transações na rede. A Proof of Work exige resolver problemas complexos, enquanto a Proof of Stake baseia-se na quantidade de criptomoeda mantida. Outras abordagens incluem DPoS e Proof of Space, garantindo segurança e descentralização nas redes blockchain.
+        acronym: Sigla
+        mining_type: Tipo de mineração
+        show_edit: Mostrar/Editar
+        new_mining_type: Novo tipos
+      new:
+        new_mining_type: Novo tipo
+      form:
+        placeholders:
+          description: Digite um tipo de mineração...
+          acronym: Digite uma sigla...
+        labels:
+          description: Nome
+          acronym: Sigla
+        submit: Salvar
+        back: Voltar
+      show:
+        back: Voltar
+        destroy: Apagar
+      edit:
+        edit_type: Editando tipo de mineração
+      create:
+        success: Tipo de mineração registrada com sucesso!
+      update:
+        success: Tipo de mineração atualizada com sucesso!
+      destroy:
+        success: Tipo de mineração apagada com sucesso!

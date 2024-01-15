@@ -3,16 +3,16 @@
       <table class="w-full text-sm text-left rtl:text-right text-gray-400">
             <caption class="text-gray-900/80 bg-pattern-tpgraphy bg-current p-5 text-left">
               <div class="flex flex-row justify-between items-center">
-                <p class="text-white text-lg font-semibold"><%= t('mining_type') %></p>
-                <%= link_to t('new_mining_type'), new_mining_type_path, class: "bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" %>
+                <p class="text-white text-lg font-semibold"><%= t('.mining_types') %></p>
+                <%= link_to t('.new_mining_type'), new_mining_type_path, class: "bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" %>
               </div>
-              <p class="mt-1 text-sm font-normal text-gray-400"> <%= t('mining_type_text') %></p>
+              <p class="mt-1 text-sm font-normal text-gray-400"> <%= t('.types_text') %></p>
             </caption>
           <thead class="text-xs uppercase bg-gray-700 text-gray-400">
               <tr>
                   <th scope="row" class="px-6 py-3">Nome</th>
                   <th scope="row" class="px-6 py-3">Sigla</th>
-                  <th scope="row" class="px-6 py-3" colspan="2"></th>
+                  <th scope="row" class="px-2 py-2 text-right" rowspan="2"><%= t('.show_edit') %> </th>
               </tr>
           </thead>
           <tbody>

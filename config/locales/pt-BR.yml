@@ -1,4 +1,5 @@
 pt-BR:
+  confirmation_msg: 'Tem certeza?'
   activerecord:
     errors:
       messages:
