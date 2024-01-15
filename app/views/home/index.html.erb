@@ -1,10 +1,10 @@
 <div class="text-white py-4 px-10 sm:px-20">
-  <h1 class="text-4xl font-bold my-2"><%= t('wellcome') %></h1>
-  <p class="text-lg my-2"><%= t('cripto_text') %></p>
+  <h1 class="text-4xl font-bold my-2"><%= t('.wellcome') %></h1>
+  <p class="text-lg my-2"><%= t('.crypto_text') %></p>
   <hr>
   <div class="py-4 flex flex-col sm:flex-row w-full sm:w-100">
-    <%= link_to t('cripto_coin'), coins_path, class: "btn-links" %>
-    <%= link_to t('mining_type'), mining_types_path, class: "btn-links" %>
+    <%= link_to t('.cripto_coins'), coins_path, class: "btn-links" %>
+    <%= link_to t('.mining_types'), mining_types_path, class: "btn-links" %>
   </div>
   <div class="flex justify-center flex-col gap-6 sm:flex-row">
     <img src="https://i.imgur.com/5rOyTIm.png" alt="Crypto Wallet" class="w-full lg:w-full xl:w-[30%] rounded-3xl">
