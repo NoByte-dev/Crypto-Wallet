@@ -6,3 +6,7 @@ pt-BR:
         wellcome: Seja muito Bem-vindo!
         cripto_coins: Cripto Moedas
         mining_types: Tipos de Mineração
+    layouts:
+      nav:
+        portuguese: Português
+        english: Inglês
