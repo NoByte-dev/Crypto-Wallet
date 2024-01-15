@@ -1,4 +1,4 @@
-# Crypto Wallet
+# Crypto Wallet / [[Click para ver]](/images.md)
 
 Esté um projeto feito para fins didáticos onde foram concretizados conhecimentos em:
 - Framework Ruby on Rails;
@@ -17,17 +17,27 @@ Esté um projeto feito para fins didáticos onde foram concretizados conheciment
 ## Setup
 
 Para iniciar o projeto deve-se executar task de configuração:
-- `rails dev:setup`
-  - Faz todas as configurações necessárias pra iniciar aplicação em ambiente de desenvolvimento.
+>```bash
+>rails dev:setup
+>```
+> Faz todas as configurações necessárias pra iniciar aplicação em ambiente de desenvolvimento.
+Caso seja necessário também existem tasks com fins mais especificos, entre tanto elas são opcionais se o comando acima foi usado.
 
 Caso seja necessário também existem tasks com fins mais especificos, entre tanto elas são opcionais se o comando acima foi usado.
-- `rails dev:seed_types`
-  - Popula dados de **Tipos de mineração** no banco
-- `rails dev:seed_coins`
-  - Popula dados de **Moedas** no banco
+>```bash
+>rails dev:seed_types
+>```
+> Popula dados de **Tipos de mineração** no banco
+
+>```bash
+>rails dev:seed_coins
+>```
+> Popula dados de **Moedas** no banco
 
 Por fim o projeto pode ser iniciado usando:
-- `bin/dev`
+>```bash
+>bin/dev
+>```
 
 ## TODO
 
