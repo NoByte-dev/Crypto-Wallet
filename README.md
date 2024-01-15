@@ -47,5 +47,5 @@ Por fim o projeto pode ser iniciado usando:
 - [ ] Tradução de models via I18n;
 - [ ] Implementar gem **Devise**
 - [ ] **Active Store** para lidar com imagens;
-- [ ] Implementar logo tipo na navbar;
+- [x] Implementar logo tipo na navbar;
 - [ ] Implementar listagem nas tabelas;
