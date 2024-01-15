@@ -1,0 +1,9 @@
+pt-BR:
+  activerecord:
+    models:
+      coin: Moeda
+    attributes:
+      coin:
+        description: Nome
+        acronym: Sigla
+        mining_type: Tipo de mineração
