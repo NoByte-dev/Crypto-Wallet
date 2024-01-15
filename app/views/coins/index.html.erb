@@ -3,18 +3,18 @@
       <table class="w-full text-sm text-left rtl:text-right text-gray-400">
             <caption class="text-gray-900/80 bg-pattern-tpgraphy bg-current p-5 text-left">
               <div class="flex flex-row justify-between items-center">
-                <p class="text-white text-lg font-semibold"><%= t('cripto_coin') %></p>
-                  <%= link_to t('new_coin'), new_coin_path, class: "bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" %>
+                <p class="text-white text-lg font-semibold"><%= t('.crypto_coins') %></p>
+                  <%= link_to t('.new_coin'), new_coin_path, class: "bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" %>
               </div>
-              <p class="mt-1 text-sm font-normal text-gray-400"> <%= t('cripto_text') %></p>
+              <p class="mt-1 text-sm font-normal text-gray-400"> <%= t('.crypto_text') %></p>
             </caption>
           <thead class="text-xs uppercase bg-gray-700 text-gray-400">
               <tr>
-                  <th scope="row" class="px-2 py-2">Moeda</th>
-                  <th scope="row" class="px-2 py-2">Sigla</th>
-                  <th scope="row" class="px-6 py-2 text-center">Ícone</th>
-                  <th scope="row" class="px-2 py-2">Tipo de Mineração</th>
-                  <th scope="row" class="px-2 py-2" rowspan="2"></th>
+                  <th scope="row" class="px-2 py-2"><%= t('.crypto_coins') %></th>
+                  <th scope="row" class="px-2 py-2"><%= t('.acronym') %></th>
+                  <th scope="row" class="px-6 py-2 text-center"><%= t('.icon') %></th>
+                  <th scope="row" class="px-2 py-2"><%= t('.mining_type') %></th>
+                  <th scope="row" class="px-2 py-2 text-right" rowspan="2"><%= t('.show_edit') %> </th>
               </tr>
           </thead>
           <tbody>

@@ -1,6 +1,6 @@
 class CoinsController < ApplicationController
   before_action :fetch_coin, only: %i[ show edit update destroy ]
-  before_action :fetch_mining_types, only: %i[ edit new create]
+  before_action :fetch_mining_types, only: %i[ edit new create update]
 
   def index
     @coins = Coin.all
@@ -18,7 +18,7 @@ class CoinsController < ApplicationController
     @coin = Coin.new(coin_params)
 
     if @coin.save
-      redirect_to coins_path, notice: t('controller_notices.created')
+      redirect_to coins_path, notice: t('.success')
     else
       render :new, status: :unprocessable_entity
     end
@@ -26,7 +26,7 @@ class CoinsController < ApplicationController
 
   def update
     if @coin.update(coin_params)
-      redirect_to coins_path, notice: t('controller_notices.updated')
+      redirect_to coins_path, notice: t('.success')
     else
       render :edit, status: :unprocessable_entity
     end
@@ -34,7 +34,7 @@ class CoinsController < ApplicationController
 
   def destroy
     @coin.destroy!
-    redirect_to coins_url, notice: t('controller_notices.deleted')
+    redirect_to coins_url, notice: t('.success')
   end
 
   private
