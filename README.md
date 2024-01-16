@@ -21,9 +21,8 @@ Para iniciar o projeto deve-se executar task de configuração:
 >rails dev:setup
 >```
 > Faz todas as configurações necessárias pra iniciar aplicação em ambiente de desenvolvimento.
-Caso seja necessário também existem tasks com fins mais especificos, entre tanto elas são opcionais se o comando acima foi usado.
 
-Caso seja necessário também existem tasks com fins mais especificos, entre tanto elas são opcionais se o comando acima foi usado.
+Caso seja necessário também existem tasks com fins mais especificos, entretanto elas são opcionais se o comando acima foi usado.
 >```bash
 >rails dev:seed_types
 >```
