@@ -1,36 +1,36 @@
 pt-BR:
-    coins:
-      index:
-        crypto_coins: Cripto Moedas
-        crypto_text: Explore o fascinante mundo das criptomoedas nesta tabela detalhada. Apresentamos logos atrativos, nomes cativantes e métodos de mineração distintos, proporcionando uma visão abrangente das opções disponíveis no universo digital financeiro.
+  coins:
+    index:
+      crypto_coins: Cripto Moedas
+      crypto_text: Explore o fascinante mundo das criptomoedas nesta tabela detalhada. Apresentamos logos atrativos, nomes cativantes e métodos de mineração distintos, proporcionando uma visão abrangente das opções disponíveis no universo digital financeiro.
+      acronym: Sigla
+      coin: Moeda
+      icon: Ícone
+      mining_type: Tipo de mineração
+      show_edit: Mostrar/Editar
+      new_coin: Nova Moeda
+    new:
+      new_coin: Nova Moeda
+    form:
+      placeholders:
+        description: Digite o nome da moeda...
+        acronym: Digite a sigla...
+      labels:
+        description: Nome
         acronym: Sigla
-        coin: Moeda
-        icon: Ícone
+        image: Imagem
         mining_type: Tipo de mineração
-        show_edit: Mostrar/Editar
-        new_coin: Nova Moeda
-      new:
-        new_coin: Nova Moeda
-      form:
-        placeholders:
-          description: Digite o nome da moeda...
-          acronym: Digite a sigla...
-          url_image: Url da imagem...
-        labels:
-          description: Nome
-          acronym: Sigla
-          url_image: URL
-          mining_type: Tipo de mineração
-        submit: Salvar
-        back: Voltar
-      show:
-        back: Voltar
-        destroy: Apagar
-      edit:
-        edit_coin: Editando moeda
-      create:
-        success: Moeda registrada com sucesso!
-      update:
-        success: Moeda atualizada com sucesso!
-      destroy:
-        success: Moeda apagada com sucesso!
+      submit: Salvar
+      back: Voltar
+      tip: Se não quiser alterar imagem basta deixar o campo acima em branco
+    show:
+      back: Voltar
+      destroy: Apagar
+    edit:
+      edit_coin: Editando moeda
+    create:
+      success: Moeda registrada com sucesso!
+    update:
+      success: Moeda atualizada com sucesso!
+    destroy:
+      success: Moeda apagada com sucesso!

@@ -15,14 +15,14 @@ en-US:
       placeholders:
         description: Enter the coin name...
         acronym: Enter the acronym...
-        url_image: Image URL...
       labels:
         description: Name
         acronym: Acronym
-        url_image: URL
+        image: Image
         mining_type: Mining Type
       submit: Save
       back: Back
+      tip: If you don't want to change the image, just leave the field above blank
     show:
       back: Back
       destroy: Delete
