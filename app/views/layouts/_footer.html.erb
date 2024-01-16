@@ -1,9 +1,50 @@
 
 <div class="w-full flex justify-center py-2 sm:py-2 border-t shadow bg-cw-purple-900 border-gray-600">
-    <span class="text-sm sm:text-center text-gray-400">
-      <%= locale_set_flag %>
-      <a href="https://github.com/NoByte-dev" class="hover:underline hover:text-cw-purple-600" target="_blank"><strong>NoByte-Dev</strong> </a> - Jan/2024<br>
-      Baseado no curso
+  <span class="flex flex-col items-center text-gray-400">
+    <div data-controller="popover">
+      <template data-popover-target="content">
+        <div class="">
+          <div data-popover-target="card" class="inline-block invisible sm:visible left-1/2 transform -translate-x-1/2 bottom-[6%] absolute w-64 text-sm border rounded-lg shadow-sm text-gray-400 bg-gray-800 border-gray-600">
+            <div class="p-4">
+              <div class="flex items-center justify-between mb-2">
+                <%= image_tag 'https://i.imgur.com/vgA2Tut.png', class: 'rounded-full size-12' %>
+                <div>
+                  <button type="button" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-xs px-3 py-1.5 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Follow</button>
+                </div>
+              </div>
+              <p class="text-base font-semibold leading-none text-gray-900 dark:text-white">
+                <a href="#">Thalys Augusto</a>
+              </p>
+              <p class="mb-3 text-sm font-normal">
+                <a href="https://www.linkedin.com/in/nobyte/" class="hover:underline hover:text-cw-purple-500">NoByte-Dev</a>
+              </p>
+              <p class="mb-4 text-sm">Desenvolvedor Web Full-Stack | Ruby on Rails</p>
+              <ul class="flex text-sm">
+                <li class="me-2">
+                  <p>
+                    <span class="font-semibold text-gray-900 dark:text-white">7</span>
+                    <span>Followers</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="font-semibold text-gray-900 dark:text-white">15</span>
+                    <span>Following</span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </template>
+      <div class="flex gap-2">
+        <%= locale_set_flag %><a href="https://github.com/NoByte-dev" class="hover:underline hover:text-cw-purple-600" data-action="mouseenter->popover#show mouseleave->popover#hide"><strong>NoByte-Dev</strong></a>
+        <p>- Jan/2024</p>
+      </div>
+    </div>
+    <div class="flex gap-1">
+      <p>Baseado no curso</p>
       <a href="https://www.udemy.com/user/jackson-pires-de-oliveira-santos-junior/" class="hover:underline hover:text-cw-purple-600" target="_blank">RoR 5.x - <strong>Jackson Pires</strong></a>
-      </span>
+    </div>
+  </span>
 </div>
