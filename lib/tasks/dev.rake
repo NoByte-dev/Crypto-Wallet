@@ -38,39 +38,42 @@ namespace :dev do
       {
         description: 'Bitcoin',
         acronym: 'BTC',
-        url_image: 'https://i.imgur.com/6SlORnD.png',
+        image: 'app/assets/images/coins/bitcoin.png',
         mining_type: MiningType.all.sample
       },
       {
         description: 'Ethereum',
         acronym: 'ETH',
-        url_image: 'https://i.imgur.com/5qsogpk.png',
+        image: 'app/assets/images/coins/ethereum.png',
         mining_type: MiningType.all.sample
       },
       {
         description: 'Desh',
         acronym: 'DASH',
-        url_image: 'https://i.imgur.com/xDGmwaU.png',
+        image: 'app/assets/images/coins/desh.png',
         mining_type: MiningType.all.sample
       },
       {
         description: 'Iota',
         acronym: 'IOT',
-        url_image: 'https://i.imgur.com/zgcUEgs.png',
+        image: 'app/assets/images/coins/iota.png',
         mining_type: MiningType.all.sample
       },
       {
         description: 'Zcash',
         acronym: 'ZAC',
-        url_image: 'https://i.imgur.com/qapHkKT.png',
+        image: 'app/assets/images/coins/zcash.png',
         mining_type: MiningType.all.sample
       }
     ]
 
-    coins_list.each do |coin|
-      coin = Coin.find_or_create_by(coin)
+    coins_list.each do |coin_attributes|
+      coin = Coin.find_or_initialize_by(description: coin_attributes[:description], acronym: coin_attributes[:acronym])
+      coin.mining_type = coin_attributes[:mining_type]
+      coin.image.attach(io: File.open(coin_attributes[:image]), filename: "#{coin.acronym.downcase}.png")
+      coin.save
     end
-  end
+  end  
 
   private
 

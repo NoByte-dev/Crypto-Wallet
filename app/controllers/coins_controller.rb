@@ -39,7 +39,7 @@ class CoinsController < ApplicationController
 
   private
     def coin_params
-      params.require(:coin).permit(:description, :acronym, :url_image, :mining_type_id)
+      params.require(:coin).permit(:description, :acronym, :image, :mining_type_id,)
     end
 
     def fetch_coin

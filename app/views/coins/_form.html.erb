@@ -11,16 +11,19 @@
         <%= form.text_field :acronym, placeholder: t('.placeholders.acronym'), class: 'form-input' %>
       </div>
       <div>
-        <%= form.label :url_image, t('.labels.url_image'), class: 'form-label' %>
-        <%= form.url_field :url_image, placeholder: t('.placeholders.url_image'), class: 'form-input' %>
+        <%= form.label :image, t('.labels.image'), class: 'form-label' %>
+        <%= form.file_field :image, class: "form-input-file", accept: 'image/png,image/jpeg' %>
+        <% if coin.persisted? %>
+          <span class="flex justify-center text-xs text-gray-400"><%= t('.tip') %></span>
+        <% end %>
       </div>
       <div>
         <%= form.label :mining_type_id, t('.labels.mining_type'), class: "form-label-select" %>
       </div>
       <div class="flex flex-row items-center justify-between gap-2">
-          <%= form.select :mining_type_id, @all_mining_types, { include_blank: 'Selecione...' }, class: "form-input-select w-full" %>
-          <%= form.submit t('.submit'), type: :submit, class: "w-1/4 cursor-pointer bg-blue-500 hover:bg-blue-700 text-white py-1 px-4 rounded cursor-pointer" %>
-          <%= link_to t('.back'), coins_path, type: :button, class: "w-1/4 text-center cursor-pointer bg-blue-500 hover:bg-blue-700 text-white py-1 px-4 rounded cursor-pointer" %>
+          <%= form.select :mining_type_id, @all_mining_types, { include_blank: 'Selecione...' }, class: "form-input-select" %>
+          <%= form.submit t('.submit'), type: :submit, class: "w-1/4 bg-blue-500 hover:bg-blue-700 text-white py-1 px-4 rounded cursor-pointer" %>
+          <%= link_to t('.back'), coins_path, type: :button, class: "w-1/4 text-center bg-blue-500 hover:bg-blue-700 text-white py-1 px-4 rounded cursor-pointer" %>
       </div>
     </div>
   </div>
