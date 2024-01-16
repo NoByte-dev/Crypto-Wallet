@@ -23,7 +23,7 @@
 ><details>
 >  <summary>[Nova Moeda]</summary>
 >
->  ![Coin New](https://i.imgur.com/o2NFrxh.png)
+>  ![Coin New](https://i.imgur.com/Sk4Ahtd.png)
 ></details>
 ><details>
 >  <summary>[Exibir Moeda]</summary>
