@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'pattern-circuit': "url('circuit-pattern.svg')",
-        'pattern-tpgraphy': "url('tpgraphy-pattern.svg')"
+        'pattern-circuit': "url('patterns/circuit-pattern.svg')",
+        'pattern-tpgraphy': "url('patterns/tpgraphy-pattern.svg')"
       },
       colors: {
         'cw-purple': {
