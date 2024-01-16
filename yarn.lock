@@ -798,6 +798,11 @@ stimulus-notification@^2.2.0:
   dependencies:
     stimulus-use "^0.51.1"
 
+stimulus-popover@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/stimulus-popover/-/stimulus-popover-6.2.0.tgz#67bcf725d9077f213869905e7b5c80212a92d802"
+  integrity sha512-QJqGXA842qS9s+c0Si6JUKDHDZVnkClvgZPfl2KbHcT6G9BMrEK+21na00SVNpWmmzdc6E1qQrq/oVY7gGaf3w==
+
 stimulus-use@^0.51.1:
   version "0.51.3"
   resolved "https://registry.yarnpkg.com/stimulus-use/-/stimulus-use-0.51.3.tgz#d7ac671aff8d0db253296dec89d38aa6f4b27e2a"
@@ -806,6 +811,7 @@ stimulus-use@^0.51.1:
     hotkeys-js ">=3"
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -824,6 +830,7 @@ string-width@^5.0.1, string-width@^5.1.2:
     strip-ansi "^7.0.1"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==

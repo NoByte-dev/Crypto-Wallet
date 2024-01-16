@@ -6,3 +6,6 @@ import { application } from "./application"
 
 import NotificationController from "./notification_controller"
 application.register("notification", NotificationController)
+
+import PopoverController from "./popover_controller"
+application.register("popover", PopoverController)
