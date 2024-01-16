@@ -11,8 +11,8 @@ Esté um projeto feito para fins didáticos onde foram concretizados conheciment
   - Tema de cores e fontes peronalizáveis.
 - Stimulus Components
   - Notifications
-  - Dropdown
 - Hotwired/Turbo-rails
+- Active Storage
 
 ## Setup
 
@@ -41,5 +41,4 @@ Por fim o projeto pode ser iniciado usando:
 
 ## TODO
 
-- [ ] **Active Store** para lidar com imagens;
 - [ ] Implementar [Breadcrumbs](https://i.imgur.com/lFfYWpg.png) de navegação;
