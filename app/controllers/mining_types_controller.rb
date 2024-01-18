@@ -1,17 +1,23 @@
 class MiningTypesController < ApplicationController
   before_action :fetch_mining_type, only: %i[ show edit update destroy ]
+  before_action :set_breadcrumbs
 
   def index
     @mining_types = MiningType.all
   end
 
-  def show; end
+  def show
+    add_breadcrumb(@mining_type.description, edit_mining_type_path(@mining_type))
+  end
 
   def new
     @mining_type = MiningType.new
+    add_breadcrumb("New Post")
   end
 
-  def edit; end
+  def edit
+    add_breadcrumb(@mining_type.description)
+  end
 
   def create
     @mining_type = MiningType.new(mining_type_params)
@@ -44,5 +50,10 @@ class MiningTypesController < ApplicationController
 
     def mining_type_params
       params.require(:mining_type).permit(:description, :acronym)
+    end
+
+    def set_breadcrumbs
+      add_breadcrumb("Home", root_path)
+      add_breadcrumb("Mining Types", coins_path)
     end
 end

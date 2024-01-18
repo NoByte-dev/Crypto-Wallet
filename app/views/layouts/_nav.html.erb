@@ -5,6 +5,7 @@
       <%= image_tag 'logo.png', alt: 'Logo do site', class: 'rounded-full size-16 absolute top-3 left-3 shadow-lg hover:shadow-cw-purple-500/80 hover:brightness-[115%] ease-out duration-500' %>
     <% end %>
   </div>
+  <%= render partial: 'shared/breadcrumbs' %>
   <div class="flex items-center space-x-2 text-white font-bold">
     <% if I18n.locale.to_s == 'en-US' %>
     <%= link_to root_path(locale: 'pt-BR'), class: 'hover:text-cw-purple-500 flex gap-1' do %>

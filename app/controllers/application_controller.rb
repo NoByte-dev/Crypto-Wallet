@@ -1,5 +1,14 @@
 class ApplicationController < ActionController::Base
   before_action :set_locale
+  helper_method :breadcrumbs
+
+  def breadcrumbs
+    @breadcrumbs ||= []
+  end
+
+  def add_breadcrumb(label, path = nil)
+    breadcrumbs << Breadcrumb.new(label, path)
+  end
 
   private
 

@@ -1,18 +1,24 @@
 class CoinsController < ApplicationController
   before_action :fetch_coin, only: %i[ show edit update destroy ]
   before_action :fetch_mining_types, only: %i[ edit new create update]
+  before_action :set_breadcrumbs
 
   def index
     @coins = Coin.all
   end
 
-  def show; end
+  def show
+    add_breadcrumb(@coin.description, edit_coin_path(@coin))
+  end
 
   def new
     @coin = Coin.new
+    add_breadcrumb("New Post")
   end
 
-  def edit; end
+  def edit
+    add_breadcrumb(@coin.description)
+  end
 
   def create
     @coin = Coin.new(coin_params)
@@ -48,5 +54,10 @@ class CoinsController < ApplicationController
 
     def fetch_mining_types
       @all_mining_types = MiningType.all.pluck(:description, :id)
+    end
+
+    def set_breadcrumbs
+      add_breadcrumb("Home", root_path)
+      add_breadcrumb("Coins", coins_path)
     end
 end
