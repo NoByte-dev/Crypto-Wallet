@@ -9,10 +9,14 @@ Esté um projeto feito para fins didáticos onde foram concretizados conheciment
 - Tailwind CSS;
   - Responssividade.
   - Tema de cores e fontes peronalizáveis.
-- Stimulus Components
-  - Notifications
-- Hotwired/Turbo-rails
-- Active Storage
+- Stimulus Components;
+  - Notifications.
+  - Popover.
+    - TODO: Criar ícone de interativade no formulário de moedas para substituir texto de de dica abaixo do campo de upload de imagens.
+- Hotwired/Turbo-rails;
+- Active Storage;
+  - TODO: Melhorar a renderização de ícones diminuido o tamanho das imagens renderizadas nas tabelas com a criação de thumbnails.
+- Breadcrumbs;
 
 ## Setup
 
@@ -37,7 +41,3 @@ Por fim o projeto pode ser iniciado usando:
 >```bash
 >bin/dev
 >```
-
-## TODO
-
-- [ ] Implementar [Breadcrumbs](https://i.imgur.com/lFfYWpg.png) de navegação;
