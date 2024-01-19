@@ -20,7 +20,7 @@
           </svg>
         </div>
           <ul class="flex flex-col list-disc list-inside">
-            <div class="ml-3 text-sm font-bold text-orange-700"><%= t('form_errors') %></div>
+            <div class="ml-3 text-sm font-bold text-orange-700"><%= t('alerts.form_errors') %></div>
             <% object.errors.each do |error| %>
               <li class="ms-3 text-sm font-normal pr-2"> <%= error.full_message %> </li>
             <% end %>

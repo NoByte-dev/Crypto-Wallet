@@ -1,6 +1,11 @@
 pt-BR:
-  form_errors: Ups, algo deu errado
-  confirmation_msg: 'Tem certeza?'
+  alerts:
+    form_errors: Ups, algo deu errado
+    confirmation_msg: 'Tem certeza?'
+  breadcrumbs:
+    home: Início
+    coins: Moedas
+    mining_types: Tipos de mineração
   date:
     abbr_day_names:
     - dom

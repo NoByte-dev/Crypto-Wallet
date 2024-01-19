@@ -13,7 +13,7 @@ class CoinsController < ApplicationController
 
   def new
     @coin = Coin.new
-    add_breadcrumb("New Post")
+    add_breadcrumb( t('.new_coin'))
   end
 
   def edit
@@ -57,7 +57,7 @@ class CoinsController < ApplicationController
     end
 
     def set_breadcrumbs
-      add_breadcrumb("Home", root_path)
-      add_breadcrumb("Coins", coins_path)
+      add_breadcrumb( t('breadcrumbs.home'), root_path)
+      add_breadcrumb( t('breadcrumbs.coins'), coins_path)
     end
 end

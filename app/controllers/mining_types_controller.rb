@@ -12,7 +12,7 @@ class MiningTypesController < ApplicationController
 
   def new
     @mining_type = MiningType.new
-    add_breadcrumb("New Post")
+    add_breadcrumb( t('.new_mining_type'))
   end
 
   def edit
@@ -53,7 +53,7 @@ class MiningTypesController < ApplicationController
     end
 
     def set_breadcrumbs
-      add_breadcrumb("Home", root_path)
-      add_breadcrumb("Mining Types", coins_path)
+      add_breadcrumb( t('breadcrumbs.home'), root_path)
+      add_breadcrumb( t('breadcrumbs.mining_types'), mining_types_path)
     end
 end

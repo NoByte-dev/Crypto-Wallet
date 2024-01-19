@@ -1,3 +1,8 @@
 en-US:
-  form_errors: Ups! Something went wrong
-  confirmation_msg: 'Are you sure?'
+  alerts:
+    form_errors: Ups! Something went wrong
+    confirmation_msg: 'Are you sure?'
+  breadcrumbs:
+    home: Home
+    coins: Coins
+    mining_types: Mining Types

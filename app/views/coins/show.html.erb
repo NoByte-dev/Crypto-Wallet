@@ -6,7 +6,7 @@
     </div>
     <div>
       <%= link_to t('.back'), coins_path, type: :button, class: "w-1/2 text-center bg-blue-500 hover:bg-blue-700 text-white py-1 px-4 rounded cursor-pointer" %>
-      <%= link_to t('.destroy'), coin_path, data: {'turbo-method': :delete, 'turbo-confirm': t('confirmation_msg')}, type: :button, class: "w-1/2 text-center bg-red-500 hover:bg-red-700 text-white py-1 px-4 rounded cursor-pointer" %>
+      <%= link_to t('.destroy'), coin_path, data: {'turbo-method': :delete, 'turbo-confirm': t('alerts.confirmation_msg')}, type: :button, class: "w-1/2 text-center bg-red-500 hover:bg-red-700 text-white py-1 px-4 rounded cursor-pointer" %>
     </div>
   </div>
 </div>

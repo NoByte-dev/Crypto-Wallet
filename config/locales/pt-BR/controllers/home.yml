@@ -1,12 +1,12 @@
 pt-BR:
-    home:
-      index:
-        crypto_coin: Cripto Moeda
-        crypto_text: Explore o fascinante mundo das criptomoedas nesta tabela detalhada. Apresentamos logos atrativos, nomes cativantes e métodos de mineração distintos, proporcionando uma visão abrangente das opções disponíveis no universo digital financeiro.
-        wellcome: Seja muito Bem-vindo!
-        cripto_coins: Cripto Moedas
-        mining_types: Tipos de Mineração
-    layouts:
-      nav:
-        portuguese: Português
-        english: Inglês
+  home:
+    index:
+      crypto_coin: Cripto Moeda
+      crypto_text: Explore o fascinante mundo das criptomoedas nesta tabela detalhada. Apresentamos logos atrativos, nomes cativantes e métodos de mineração distintos, proporcionando uma visão abrangente das opções disponíveis no universo digital financeiro.
+      wellcome: Seja muito Bem-vindo!
+      cripto_coins: Cripto Moedas
+      mining_types: Tipos de Mineração
+  layouts:
+    nav:
+      portuguese: Português
+      english: Inglês
