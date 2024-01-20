@@ -13,7 +13,6 @@ Esté um projeto feito para fins didáticos onde foram concretizados conheciment
 - Stimulus Components;
   - Notifications.
   - Popover.
-    - TODO: Criar ícone de interativade no formulário de moedas para substituir texto de de dica abaixo do campo de upload de imagens.
 - Hotwired/Turbo-rails;
 - Active Storage;
   - Processamento de imagens com **Mini Magick** aumentando a performace da aplicação manipulando tamanho da imagem renderizada.
