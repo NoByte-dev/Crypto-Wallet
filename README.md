@@ -15,7 +15,7 @@ Esté um projeto feito para fins didáticos onde foram concretizados conheciment
     - TODO: Criar ícone de interativade no formulário de moedas para substituir texto de de dica abaixo do campo de upload de imagens.
 - Hotwired/Turbo-rails;
 - Active Storage;
-  - TODO: Melhorar a renderização de ícones diminuido o tamanho das imagens renderizadas nas tabelas com a criação de thumbnails.
+  - Processamento de imagens com **Mini Magick** aumentando a performace da aplicação manipulando tamanho da imagem renderizada.
 - Breadcrumbs;
 
 ## Setup

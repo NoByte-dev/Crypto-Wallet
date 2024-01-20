@@ -26,6 +26,7 @@ en-US:
     show:
       back: Back
       destroy: Delete
+      image_full_size: Original size
     edit:
       edit_coin: Editing Coin
     create:

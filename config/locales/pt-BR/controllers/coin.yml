@@ -26,6 +26,7 @@ pt-BR:
     show:
       back: Voltar
       destroy: Apagar
+      image_full_size: Tamanho original
     edit:
       edit_coin: Editando moeda
     create:

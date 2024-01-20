@@ -73,4 +73,7 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
+
+  # Configure Active Storage to use MiniMagick as the variant processor for image manipulation.
+  config.active_storage.variant_processor = :mini_magick
 end

@@ -27,7 +27,7 @@
                     <%= coin.acronym %>
                   </td>
                   <td class="px-6 py-2 flex justify-center">
-                    <%= image_tag coin.image, class: 'rounded-full size-[25px]' %>
+                    <%= image_tag coin.image_as_icon, class: 'rounded-full', alt: "#{coin.description.titleize} icon" %>
                   </td>
                   <td class="px-2 py-2">
                     <%= coin.mining_type.description %>
