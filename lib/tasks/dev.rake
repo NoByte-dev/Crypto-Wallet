@@ -3,14 +3,17 @@ namespace :dev do
   desc 'Configura ambiente de desenvolvimento'
   task setup: :environment do
     puts "#{@color.yellow('Configurando ambiente de desenvolvimento!')}"
-    show_spinner('Apagando banco de dados!') { %x(rails db:drop) }
-    show_spinner('Criando banco de dados!') { %x(rails db:create) }
-    show_spinner('Configurando banco de dados!') { %x(rails db:migrate) }
-    show_spinner('Populando banco de dados com Tipos de Mineração!') { %x(rails dev:seed_types) }
-    show_spinner('Populando banco de dados com Moedas!') { %x(rails dev:seed_coins) }
+    elapsed = Benchmark.realtime do
+      show_spinner('Apagando banco de dados!') { %x(rails db:drop) }
+      show_spinner('Criando banco de dados!') { %x(rails db:create) }
+      show_spinner('Configurando banco de dados!') { %x(rails db:migrate) }
+      show_spinner('Populando banco de dados com Tipos de Mineração!') { %x(rails dev:seed_types) }
+      show_spinner('Populando banco de dados com Moedas!') { %x(rails dev:seed_coins) }
+      show_spinner('Preparando assets de Scripts, Estilo e Imagens!') { %x(rails assets:precompile 2>&1 > /dev/null) }
+      show_spinner('Configurando e buildando Yarn') { %x(yarn install 2>&1 > /dev/null; yarn build 2>&1 > /dev/null) }
+    end
+    puts "#{@color.yellow("Concluído em #{@color.green(elapsed.round(2))} segundos")}"
   end
-
-  desc 'Popular o banco de dados com tipos de mineração'
   task seed_types: :environment do
     miningtypes_list = [
       {
