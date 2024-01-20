@@ -9,6 +9,7 @@ Esté um projeto feito para fins didáticos onde foram concretizados conheciment
 - Tailwind CSS;
   - Responssividade.
   - Tema de cores e fontes peronalizáveis.
+  - TODO: Dark/Light Mode
 - Stimulus Components;
   - Notifications.
   - Popover.
