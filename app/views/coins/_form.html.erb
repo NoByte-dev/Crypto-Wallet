@@ -13,9 +13,6 @@
       <div>
         <%= form.label :image, t('.labels.image'), class: 'form-label' %>
         <%= form.file_field :image, class: "form-input-file", accept: 'image/png,image/jpeg' %>
-        <% if coin.persisted? %>
-          <span class="flex justify-center text-xs text-gray-400"><%= t('.tip') %></span>
-        <% end %>
       </div>
       <div>
         <%= form.label :mining_type_id, t('.labels.mining_type'), class: "form-label-select" %>

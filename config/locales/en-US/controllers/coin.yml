@@ -22,13 +22,14 @@ en-US:
         mining_type: Mining Type
       submit: Save
       back: Back
-      tip: If you don't want to change the image, just leave the field above blank
     show:
       back: Back
       destroy: Delete
       image_full_size: Original size
     edit:
       edit_coin: Editing Coin
+      tip: 'Tip:'
+      tip_text: If you don't want to change the image, just leave the image field blank.
     create:
       success: Coin successfully registered!
     update:

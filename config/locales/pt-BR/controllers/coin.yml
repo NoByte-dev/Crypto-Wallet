@@ -22,13 +22,14 @@ pt-BR:
         mining_type: Tipo de mineração
       submit: Salvar
       back: Voltar
-      tip: Se não quiser alterar imagem basta deixar o campo acima em branco
     show:
       back: Voltar
       destroy: Apagar
       image_full_size: Tamanho original
     edit:
       edit_coin: Editando moeda
+      tip: 'Dica:'
+      tip_text: Se não quiser alterar imagem basta deixar o campo de imagem em branco.
     create:
       success: Moeda registrada com sucesso!
     update:

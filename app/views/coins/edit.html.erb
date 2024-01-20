@@ -1,6 +1,28 @@
 <div class="w-full flex justify-center pt-5">
-  <div class="flex flex-col w-[95%] sm:w-[75%] md:w-[50%] lg:w-[40%] xl:w-[25%] p-5 justify-center bg-gray-800 rounded-xl">
-    <h1 class="text-white text-2xl pl-5"><%= t('.edit_coin') %> <strong>#<%= @coin.id %></strong></h1>
+  <div class="relative flex flex-col w-[95%] sm:w-[75%] md:w-[50%] lg:w-[40%] xl:w-[25%] p-5 justify-center bg-gray-800 rounded-xl">
+    <div class="flex justify-between px-5 items-center">
+      <h1 class="text-white text-2xl"><%= t('.edit_coin') %> <strong>#<%= @coin.id %></strong> </h1>
+      <div data-controller="popover">
+        <template data-popover-target="content">
+          <div data-popover-target="card" class="inline-block invisible sm:visible left-1/2 transform translate-x-[25%] top-[14%] absolute w-64 text-sm border rounded-lg shadow-sm text-gray-400 bg-gray-800 border-gray-600">
+            <div class="p-4">
+              <p class="text-base font-semibold leading-none text-gray-900 dark:text-white"><%= t('.tip') %></p>
+              <p class="text-sm"> <%= t('.tip_text') %></p>
+            </div>
+          </div>
+        </template>
+          <i data-action="mouseenter->popover#show mouseleave->popover#hide">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white hover:text-cw-purple-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+            </svg>
+          </i>
+      </div>
+    </div>
     <%= render "form", coin: @coin %>
   </div>
 </div>
